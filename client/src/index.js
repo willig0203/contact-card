@@ -1,5 +1,8 @@
-import "./js/form";
-import "./js/submit";
+import "./js/index.js";
+import "./css/index.css";
+
+import { Tooltip, Toast, Popover } from "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import Logo from "./images/logo02.jpeg";
 import Bear from "./images/bear.png";
