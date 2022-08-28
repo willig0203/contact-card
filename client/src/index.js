@@ -1,7 +1,7 @@
 import "./js/index.js";
 import "./css/index.css";
 
-import { initdb, getDb, postDb } from "./js/database";
+import { initdb, getDb, postDb, deleteDb } from "./js/database";
 
 import { fetchCards } from "./js/card";
 
@@ -21,3 +21,12 @@ window.addEventListener("load", function () {
   document.getElementById("bearThumbnail").src = Bear;
   document.getElementById("dogThumbnail").src = Dog;
 });
+
+window.deleteCard = (e) => {
+  // Grabs the id from the button element attached to the contact card.
+  let id = parseInt(e.id);
+  // Delete the card
+  deleteDb(id);
+  // Reload the DOM
+  fetchCards();
+};
