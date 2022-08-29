@@ -16,11 +16,22 @@ import Dog from "./images/dog.png";
 
 window.addEventListener("load", function () {
   initdb();
+
   fetchCards();
   document.getElementById("logo").src = Logo;
   document.getElementById("bearThumbnail").src = Bear;
   document.getElementById("dogThumbnail").src = Dog;
 });
+
+// didn't get this in the lesson
+// not final code yet
+window.addCard = (e) => {
+  // We are temporarily placing getDb() and postDb() function
+  // calls here for testing. We will move it to another event listener later.
+  getDb();
+  postDb("Gary", "gary@test.com", 8186601234, "Bear");
+  getDb();
+};
 
 window.deleteCard = (e) => {
   // Grabs the id from the button element attached to the contact card.
