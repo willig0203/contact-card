@@ -13,6 +13,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "./images/logo.png";
 import Bear from "./images/bear.png";
 import Dog from "./images/dog.png";
+import Unused from "./images/unused-image.png";
 
 if ("serviceWorker" in navigator) {
   // Use the window load event to keep the page load performant
